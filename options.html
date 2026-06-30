@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Load Gmail Draft Button Settings</title>
+    <link rel="stylesheet" href="options.css">
+  </head>
+  <body>
+    <main class="settings">
+      <h1>Gmail draft settings</h1>
+
+      <form id="settings-form">
+        <label for="gmail-account-select">Gmail account</label>
+        <div class="account-row">
+          <select id="gmail-account-select" name="selectedGmailEmail" required>
+            <option value="">Choose an account</option>
+          </select>
+          <button id="choose-google-account" type="button">Choose with Google</button>
+          <button id="remove-account" type="button">Remove</button>
+        </div>
+
+        <label for="gmail-send-redirect-uri">Gmail send redirect URI</label>
+        <div class="account-row">
+          <input id="gmail-send-redirect-uri" readonly>
+          <button id="copy-redirect-uri" type="button">Copy</button>
+          <button id="authorize-send" type="button">Authorize send</button>
+        </div>
+
+        <label for="subject-template">Subject template</label>
+        <input id="subject-template" name="subjectTemplate" required>
+
+        <label for="email-body">Email body template</label>
+        <textarea id="email-body" name="emailBody" rows="8" required></textarea>
+
+        <div class="actions">
+          <button type="submit">Save settings</button>
+          <a id="test-link" href="#" target="_blank" rel="noopener noreferrer">Open selected Gmail</a>
+        </div>
+
+        <p id="status" role="status" aria-live="polite"></p>
+      </form>
+    </main>
+
+    <script src="options.js"></script>
+  </body>
+</html>

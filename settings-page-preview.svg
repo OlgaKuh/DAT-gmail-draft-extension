@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="940" viewBox="0 0 760 940">
+  <rect width="760" height="940" fill="#f8fafc"/>
+  <text x="70" y="74" fill="#172033" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">Gmail draft settings</text>
+
+  <rect x="70" y="100" width="620" height="610" rx="8" fill="#ffffff" stroke="#d9e1ec"/>
+
+  <text x="94" y="142" fill="#172033" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700">Gmail account</text>
+  <rect x="94" y="154" width="278" height="40" rx="6" fill="#ffffff" stroke="#b8c3d1"/>
+  <text x="108" y="179" fill="#172033" font-family="Arial, Helvetica, sans-serif" font-size="14">dispatch@utslogistic.com</text>
+  <path d="M348 170l6 7 6-7z" fill="#4b5870"/>
+  <rect x="384" y="154" width="154" height="40" rx="6" fill="#ffffff" stroke="#b8c3d1"/>
+  <text x="405" y="179" fill="#174ea6" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700">Choose with Google</text>
+  <rect x="550" y="154" width="82" height="40" rx="6" fill="#ffffff" stroke="#b8c3d1"/>
+  <text x="570" y="179" fill="#174ea6" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700">Remove</text>
+
+  <text x="94" y="232" fill="#172033" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700">Gmail send redirect URI</text>
+  <rect x="94" y="244" width="358" height="40" rx="6" fill="#f8fafc" stroke="#b8c3d1"/>
+  <text x="108" y="269" fill="#4b5870" font-family="Arial, Helvetica, sans-serif" font-size="13">https://example-extension-id.chromiumapp.org/gmail-send</text>
+  <rect x="464" y="244" width="70" height="40" rx="6" fill="#ffffff" stroke="#b8c3d1"/>
+  <text x="485" y="269" fill="#174ea6" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700">Copy</text>
+  <rect x="546" y="244" width="118" height="40" rx="6" fill="#ffffff" stroke="#b8c3d1"/>
+  <text x="565" y="269" fill="#174ea6" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700">Authorize send</text>
+
+  <text x="94" y="342" fill="#172033" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700">Subject template</text>
+  <rect x="94" y="354" width="548" height="40" rx="6" fill="#ffffff" stroke="#b8c3d1"/>
+  <text x="108" y="379" fill="#172033" font-family="Arial, Helvetica, sans-serif" font-size="14">Truck for {from} to {to}</text>
+
+  <text x="94" y="432" fill="#172033" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700">Email body template</text>
+  <rect x="94" y="444" width="548" height="150" rx="6" fill="#ffffff" stroke="#b8c3d1"/>
+  <text x="108" y="470" fill="#172033" font-family="Arial, Helvetica, sans-serif" font-size="14">MC 110082</text>
+
+  <rect x="94" y="624" width="122" height="40" rx="6" fill="#1a73e8" stroke="#1558b0"/>
+  <text x="118" y="649" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700">Save settings</text>
+  <rect x="228" y="624" width="150" height="40" rx="6" fill="#ffffff" stroke="#b8c3d1"/>
+  <text x="250" y="649" fill="#174ea6" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700">Open selected Gmail</text>
+
+  <text x="94" y="692" fill="#176a3a" font-family="Arial, Helvetica, sans-serif" font-size="14">Preview with sample values.</text>
+</svg>

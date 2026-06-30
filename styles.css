@@ -1,0 +1,40 @@
+.mc110082-gmail-draft-button {
+  align-items: center;
+  appearance: none;
+  background: #1a73e8;
+  border: 1px solid #1558b0;
+  border-radius: 4px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font: 600 11px/1.2 Arial, Helvetica, sans-serif;
+  gap: 4px;
+  margin-left: 8px;
+  min-height: 22px;
+  padding: 4px 8px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.mc110082-gmail-draft-button:hover {
+  background: #1558b0;
+}
+
+.mc110082-gmail-send-button {
+  background: #188038;
+  border-color: #146c2e;
+}
+
+.mc110082-gmail-send-button:hover {
+  background: #146c2e;
+}
+
+.mc110082-gmail-draft-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.mc110082-gmail-draft-button:focus-visible {
+  outline: 2px solid #174ea6;
+  outline-offset: 2px;
+}
