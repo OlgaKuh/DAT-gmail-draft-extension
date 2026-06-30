@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Load Gmail Draft Button",
   "description": "Adds a Gmail draft button next to broker contact emails on load detail pages.",
-  "version": "3.0.2",
+  "version": "3.0.4",
   "permissions": ["identity", "storage"],
   "host_permissions": ["https://www.googleapis.com/*"],
   "icons": {

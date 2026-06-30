@@ -106,17 +106,33 @@
     return null;
   }
 
-  function findRouteNearEmail(emailElement) {
-    const containers = [
-      document.querySelector("main"),
-      emailElement.closest("section"),
-      emailElement.closest("article"),
-      emailElement.closest("[role='main']"),
-      document.body
-    ].filter(Boolean);
+  function parseDatRouteFromContainer(container) {
+    const routeElement = container.querySelector?.("dat-route");
+    if (!routeElement) return null;
 
-    for (const container of containers) {
-      const route = parseRouteFromText(container.innerText || "");
+    const from = cleanLocation(routeElement.querySelector(".origin .extended-trip-point")?.textContent || "");
+    const to = cleanLocation(routeElement.querySelector(".destination .extended-trip-point")?.textContent || "");
+
+    if (from && to) {
+      return { from, to };
+    }
+
+    return null;
+  }
+
+  function findRouteNearEmail(emailElement) {
+    const containers = [];
+    let currentElement = emailElement.parentElement;
+
+    while (currentElement && currentElement !== document.body) {
+      containers.push(currentElement);
+      currentElement = currentElement.parentElement;
+    }
+
+    containers.push(document.querySelector("main"), document.body);
+
+    for (const container of [...new Set(containers)].filter(Boolean)) {
+      const route = parseDatRouteFromContainer(container) || parseRouteFromText(container.innerText || "");
       if (route) return route;
     }
 
