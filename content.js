@@ -72,6 +72,7 @@
   function cleanLocation(value) {
     return value
       .replace(/\s+/g, " ")
+      .replace(/^(?:Trip|Origin|Destination)\s+/i, "")
       .replace(/\s*\(\d+\)\s*/g, "")
       .replace(/\s+\d+\s*(mi|miles)\b.*$/i, "")
       .replace(/^[-•\s]+|[-•\s]+$/g, "")
@@ -270,8 +271,13 @@
   function findEmailElements() {
     const emailLinks = [...document.querySelectorAll("a[href^='mailto:'], a")]
       .filter((element) => getEmailFromElement(element));
+    const commentEmailElements = [
+      ...document.querySelectorAll(
+        "dat-notes .notes-contents, [data-test='comments-container'] .notes-contents"
+      )
+    ].filter((element) => getEmailFromElement(element));
 
-    emailLinks.forEach(addButtonToEmail);
+    [...emailLinks, ...commentEmailElements].forEach(addButtonToEmail);
   }
 
   function rebuildEmailButtons() {
